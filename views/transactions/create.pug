@@ -1,0 +1,18 @@
+head
+  link(rel="stylesheet", href="/style.css")
+body
+  a(href="/books")
+    h1 LIBRARY
+  h2 ADD USER
+  form(action="/transactions/create", method="POST")
+    label(for="user") user
+    select(name="userId", id="user")
+      each user in users
+        option= user.name
+    br
+    label(for="book") book
+    select(name="bookId", id="book")
+      each book in books
+        option= book.title
+    button ADD
+    

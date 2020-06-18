@@ -1,0 +1,18 @@
+head
+  link(rel="stylesheet", href="/style.css")  
+body
+  a(href="/books")
+    h1 LIBRARY
+  h2 TRANSACTIONS
+
+  ul
+    each transaction in transactions
+      li
+        span= transaction.userId
+        span= "====="
+        span= transaction.bookId
+
+  button
+    a(href="/transactions/create") ADD TRANSACTION
+
+

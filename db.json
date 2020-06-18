@@ -1,0 +1,32 @@
+{
+  "books": [
+    {
+      "title": "hỗ trợ học HTML",
+      "bookId": "29RthD6Eg"
+    },
+    {
+      "title": "hỗ trợ học css",
+      "bookId": "1LCJvq5Zm"
+    }
+  ],
+  "users": [
+    {
+      "name": "Nguyễn Đức Nhân",
+      "userId": "FVM6xxWET"
+    },
+    {
+      "name": "Tài",
+      "userId": "DlIFWzg4W"
+    }
+  ],
+  "transactions": [
+    {
+      "userId": "Nguyễn Đức Nhân",
+      "bookId": "hỗ trợ học HTML"
+    },
+    {
+      "userId": "Tài",
+      "bookId": "hỗ trợ học HTML"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+head
+  link(rel="stylesheet", href="/style.css")  
+body
+  a(href="/books")
+    h1 LIBRARY
+  a(href="/users")
+    h1 USERS
+
+  form(action="/users/search",method="GET")
+    input(type="name", name="q")
+    button SEARCH
+
+  ul
+    each user in users
+      li
+        span= user.name
+        span 
+        button
+          a(href="/users/" + user.id + "/delete") DELETE
+        button
+          a(href="/users/" + user.id + "/update") UPDATE
+
+  button
+    a(href="/users/create") ADD USER
+
+
